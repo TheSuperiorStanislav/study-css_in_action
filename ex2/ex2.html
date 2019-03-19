@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="padded">
+        Less so wherever sighed save earthworm oh as one jeez zebra anteater frog much some but continual some overslept hawk deer jeepers lemming this hello supply yellow much ouch shined to purposefully since and against mallard thus one masterful a in less naked mowed grimy significantly dreadful where hiccupped ponderously the less imminent terrier dear jeez dear bee amongst greyhound because oh including hey friskily at slight yikes hey excluding gazelle jeepers and vitally because moaned bearishly since wherever and audaciously some up outside far thus courageous effortless wherever some darn circa notwithstanding mounted among hello anxious that.
+    </div>
+    We love coffee
+    <p class="slogan">We love coffee</p>
+    <span class="box box-small">Small</span>
+    <span class="box box-large">Large</span>
+    <ul>
+        <li>
+            Smaller
+            <ul>
+                <li>
+                    Smaller
+                    <ul>
+                        <li>
+                            Smaller
+                            <ul>
+                                <li>
+                                    Smaller
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="panel">
+        <h2>Single-origin</h2>
+        <div class="panel-body">
+            We have built partnerships with small farms around the world to 
+            hand-select beans at the peak of season. We then carefully roast 
+            in <a href="/batch-size">small batches</a> to maximize their 
+            potential.
+        </div>
+    </div>
+    <aside class="dark">
+        <div class="panel">
+            <h2>Single-origin</h2>
+            <div class="panel-body">
+                We have built partnerships with small farms around the world to 
+                hand-select beans at the peak of season. We then carefully roast 
+                in <a href="/batch-size">small batches</a> to maximize their 
+                potential.
+            </div>
+        </div>
+    </aside>
+    <div class="panel large">
+        <h2>Single-origin</h2>
+        <div class="panel-body">
+            We have built partnerships with small farms around the world to 
+            hand-select beans at the peak of season. We then carefully roast 
+            in <a href="/batch-size">small batches</a> to maximize their 
+            potential.
+        </div>
+    </div>
+    <p class="about-us"> 
+        We have built partnerships with small farms around the world to 
+        hand-select beans at the peak of season. We then carefully roast in 
+        small batches to maximize their potential. 
+    </p>
+    <script>
+        const getRandomColor = () => {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        const setRandomColor = () => {
+            var rootElement = document.documentElement;
+            rootElement.style.setProperty('--main-bg', getRandomColor())
+        }
+
+        setRandomColor()
+        
+          
+    </script>
+</body>
+</html>

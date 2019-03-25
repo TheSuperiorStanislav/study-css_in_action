@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Sansita');
+
 html {
     --brand-green: hsl(162, 87%, 21%);
     --dark-green: hsl(162, 88%, 30%);
@@ -21,12 +23,25 @@ html {
 
 body {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.4;
     line-height: 1.4;
     background-color: var(--extra-light-gray);
 }
 
-h1 h2 h3 h4 {
+.fonts-failed body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Sansita', Times, serif;
+    letter-spacing: .03em;
+}
+
+.fonts-failed h1,
+.fonts-failed h2,
+.fonts-failed h3,
+.fonts-failed h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -58,14 +73,20 @@ p {
     max-width: 1080px;
     margin: 0 auto;
     padding: .625em 0;
+    align-items: flex-end;
 }
 
 .home-link {
     color: var(--text-color);
     font-size: 1.6rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Sansita', serif;
     font-weight: bold;
+    letter-spacing: 0.03em;
     text-decoration: none;
+}
+
+.fonts-failed .home-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .top-nav {
@@ -78,11 +99,14 @@ p {
 }
 .top-nav a {
     display: block;
-    padding: .3em 1.25em;
+    font-size: 0.8rem;
+    padding: .3rem 1.25rem;
     color: var(--white);
     background-color: var(--brand-green);
     text-decoration: none;
     border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: .03em;
 }
 .top-nav a:hover {
     background-color: var(--dark-green);
@@ -112,6 +136,9 @@ p {
     font-size: 1.95rem;
     margin-top: 0;
     margin-bottom: .625rem;
+    font-weight: bold;
+    letter-spacing: -.02em;
+    color: var(--text-color);
 }
 
 .button {
@@ -121,7 +148,7 @@ p {
     border: 2px solid var(--dark-green);
     border-radius: .2em;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 .button:hover {
     background-color: var(--dark-green);
